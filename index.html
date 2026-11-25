@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kakao z mlekiem — wyzwanie na listopad</title>
+<style>
+  :root{
+    --bg:#FBF5EE; --ink:#2E1F18; --cocoa:#5A3A2A; --accent:#A8622B;
+    --cream:#F1E4D3; --paper:#FFFFFF; --line:#E6D6C3;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:inherit}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1E1511; --ink:#F3E8DD; --cocoa:#E3B48C; --accent:#E0A06A;
+      --cream:#35261D; --paper:#2A1E18; --line:#4A3629;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1E1511; --ink:#F3E8DD; --cocoa:#E3B48C; --accent:#E0A06A;
+    --cream:#35261D; --paper:#2A1E18; --line:#4A3629;
+  }
+  html{scroll-padding-top:env(safe-area-inset-top,0px)}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    line-height:1.55;
+  }
+  .wrap{max-width:640px; margin:0 auto; padding:28px 20px 56px}
+  header{margin-bottom:26px}
+  .eyebrow{color:var(--accent); font-size:15px; margin:0 0 6px}
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    font-size:38px; line-height:1.1; margin:0 0 10px; color:var(--cocoa);
+    letter-spacing:-0.01em;
+  }
+  .lead{font-size:17px; max-width:36em; margin:0}
+  .challenge{
+    background:var(--paper); border:1px solid var(--line); border-radius:14px;
+    padding:20px 22px; margin:24px 0; display:flex; gap:16px; align-items:flex-start;
+  }
+  .challenge .icon{font-size:32px; line-height:1}
+  .challenge p{margin:0; font-size:16px}
+  .challenge strong{color:var(--accent)}
+  section{margin:32px 0}
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    font-size:22px; margin:0 0 10px; color:var(--ink);
+  }
+  p{margin:0 0 10px; max-width:38em}
+  .stats{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:14px 0 10px}
+  .stat{background:var(--cream); border-radius:12px; padding:14px 16px}
+  .stat .n{font-size:23px; font-weight:600; color:var(--cocoa); line-height:1.2}
+  .stat .l{font-size:14px; opacity:.85}
+  .note{font-size:14px; opacity:.8}
+  .cols{display:grid; gap:12px; margin-top:12px}
+  .card{background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:16px 18px}
+  .card h3{margin:0 0 6px; font-size:17px; color:var(--accent)}
+  .card p{margin:0; font-size:15px}
+  ul{margin:0 0 10px; padding-left:20px}
+  li{margin-bottom:9px}
+  .honest{
+    background:var(--cream); border-radius:12px; padding:14px 18px; margin-top:14px; font-size:15px;
+  }
+  .src{font-size:13px; opacity:.7; margin-top:26px}
+  footer{
+    margin-top:36px; padding-top:20px; border-top:1px solid var(--line);
+    font-size:14px; opacity:.85;
+  }
+  footer p{margin:0 0 4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Wyzwanie na listopad</p>
+  <h1>Kakao z mlekiem</h1>
+  <p class="lead">Zwykła szklanka, a w środku więcej, niż się wydaje.</p>
+</header>
+
+<div class="challenge">
+  <div class="icon">☕</div>
+  <p>Sięgnij po szklankę <strong>kakao z mlekiem</strong> i sprawdź, co naprawdę dostarcza Twojemu organizmowi i jak wpływa na samopoczucie.</p>
+</div>
+
+<section>
+  <h2>Czy wiesz, ile to daje?</h2>
+  <p>Jedna szklanka to 250 ml mleka 2% i 2 łyżeczki (ok. 10 g) kakao naturalnego, bez cukru:</p>
+  <div class="stats">
+    <div class="stat"><div class="n">ok. 170 kcal</div><div class="l">energii</div></div>
+    <div class="stat"><div class="n">ok. 10 g</div><div class="l">białka</div></div>
+    <div class="stat"><div class="n">ok. 315 mg</div><div class="l">wapnia</div></div>
+    <div class="stat"><div class="n">ok. 70 mg</div><div class="l">magnezu</div></div>
+    <div class="stat"><div class="n">ok. 570 mg</div><div class="l">potasu</div></div>
+    <div class="stat"><div class="n">ok. 1,1 mg</div><div class="l">żelaza</div></div>
+  </div>
+  <p>Wapnia jest tyle, że jedna szklanka pokrywa mniej więcej ¼ dziennego zapotrzebowania nastolatka, a magnezu około 1/5.</p>
+  <p class="note">Wartości szacunkowe. Zależą od rodzaju mleka, kakao i dodatku cukru. Łyżeczka cukru to kolejne ok. 20 kcal.</p>
+</section>
+
+<section>
+  <h2>Skąd te składniki</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Mleko</h3>
+      <p>Pełnowartościowe białko, wapń i fosfor dla kości i zębów, witaminy z grupy B (m.in. B2 i B12) oraz potas. Mleko pełne i odtłuszczone różnią się głównie tłuszczem i kalorycznością, a białka i wapnia mają podobnie dużo.</p>
+    </div>
+    <div class="card">
+      <h3>Kakao naturalne</h3>
+      <p>Bogate w magnez, potas, żelazo, fosfor i cynk. 100 g proszku to ponad 400 mg magnezu i prawie 6 g błonnika, choć w szklance używamy tylko ok. 10 g. Do tego polifenole (flawanole) o działaniu przeciwutleniającym.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Wpływ na samopoczucie</h2>
+  <ul>
+    <li><strong>Flawanole kakaowe.</strong> W badaniach wiązano je z lepszym nastrojem. W jednym z przeglądów badań nad czekoladą i kakao w pięciu z ośmiu prac zauważono poprawę nastroju lub mniej negatywnych emocji.</li>
+    <li><strong>Teobromina i kofeina.</strong> Pobudzają łagodniej niż kawa. Kofeiny w szklance kakao jest wyraźnie mniej niż w filiżance kawy.</li>
+    <li><strong>Ciepły napój i chwila przerwy.</strong> Smak, ciepło i rytuał robienia kakao same w sobie pomagają się wyciszyć i odpocząć.</li>
+  </ul>
+  <div class="honest">Naukowcy wciąż badają, jak dokładnie kakao działa na nastrój, a wyniki nie są jednoznaczne. To miły, wartościowy napój, ale nie lek na stres ani gorszy nastrój.</div>
+</section>
+
+<section>
+  <h2>Jak zrobić dobre kakao</h2>
+  <ul>
+    <li>Wybieraj <strong>kakao naturalne</strong> w proszku, bez dodatku cukru, a nie gotowe słodzone mieszanki instant.</li>
+    <li>Rozmieszaj kakao z odrobiną zimnego mleka, potem dolej resztę podgrzanego mleka. Unikniesz grudek.</li>
+    <li>Słodź oszczędnie. Na smaku pomoże szczypta cynamonu lub wanilii.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Warto pamiętać</h2>
+  <ul>
+    <li>Wystarczy 1–2 szklanki dziennie. To napój, a nie zamiennik posiłku.</li>
+    <li>Przy nietolerancji laktozy wybierz mleko bez laktozy lub napój roślinny wzbogacony w wapń.</li>
+    <li>Osoby wrażliwe na teobrominę mogą źle spać po kakao wieczorem, a u niektórych kakao nasila migreny.</li>
+  </ul>
+</section>
+
+<p class="src">Źródła: tabela wartości odżywczych kakao (mp.pl), przeglądy badań o kakao, nastroju i funkcjach poznawczych (m.in. Nutrition Reviews 2013).</p>
+
+<footer>
+  <p>Wyzwanie organizuje Zespół Szkół w Czchowie, Technikum Żywienia i Usług Gastronomicznych.</p>
+  <p>To prozdrowotna akcja w ramach utrwalania wiedzy o zdrowym odżywianiu.</p>
+</footer>
+
+</div>
+</body>
+</html>
